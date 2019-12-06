@@ -16,6 +16,12 @@ const NavBar: React.FC<NavBarProps> = () => {
           <NavLink exact to="/profile" className="btn btn-secondary mx-1" >
             Your Profile
               </NavLink>
+          <NavLink exact to="/contact" className="btn btn-secondary mx-1" >
+            Contact Us
+              </NavLink>
+              <NavLink exact to="/donate" className="btn btn-secondary mx-1" >
+            Donate
+              </NavLink>
           <NavLink exact to="/Login" className="btn btn-success mx-1" >
             Login / Sign Up
               </NavLink>

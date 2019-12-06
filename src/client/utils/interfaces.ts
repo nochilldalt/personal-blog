@@ -20,5 +20,6 @@ export interface IBlogTag{
 export interface IProfile{
     name: string,
     email: string,
+    avatar:string,
     _created: Date
 }

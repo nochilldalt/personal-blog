@@ -12,6 +12,7 @@ const Profile: React.FC<ProfileProps> = (props) => {
     const [profile, setProfile] = useState<IProfile>({
         name: 'test',
         email: "test",
+        avatar: "",
         _created: new Date()
     })
 
@@ -38,6 +39,7 @@ const Profile: React.FC<ProfileProps> = (props) => {
             <div className="card-body">
                 <div className="card-header bg-primary text-white text-center">
                     <h1>Welcome, {profile.name}</h1>
+                    <img src={profile.avatar} alt="user profile photo"/>
                 </div>
                 <br/>
                 <Link className="btn btn-success mx-auto btn-block" to={`/compose`}>Write a New Blog</Link>
